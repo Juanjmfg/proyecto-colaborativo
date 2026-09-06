@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Casacas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .producto {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .producto img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .producto h2 {
+            margin: 15px 0 8px;
+        }
+
+        .precio {
+            color: #e63946;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #111;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .boton:hover {
+            background: #e63946;
+        }
+
+        footer {
+            text-align: center;
+            background: #111;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CASACAS URBAN</h1>
+        <p>Encuentra tu estilo</p>
+    </header>
+
+    <main class="contenedor">
+        <div class="productos">
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5" alt="Casaca negra">
+                <h2>Casaca Negra</h2>
+                <p class="precio">S/ 129.90</p>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1548883354-7622d03aca27" alt="Casaca de cuero">
+                <h2>Casaca de Cuero</h2>
+                <p class="precio">S/ 179.90</p>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea" alt="Casaca beige">
+                <h2>Casaca Beige</h2>
+                <p class="precio">S/ 149.90</p>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3" alt="Casaca denim">
+                <h2>Casaca Denim</h2>
+                <p class="precio">S/ 119.90</p>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Casacas Urban - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
